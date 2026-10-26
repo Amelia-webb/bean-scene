@@ -1,0 +1,20 @@
+# System files (Windows/Mac)
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor folders
+.vscode/
+.idea/
+
+# Node.js build stuff (for the future)
+node_modules/
+dist/
+build/
+
+# Secrets - never commit!
+.env
+
+# Logs and temp files
+*.log
+*.tmp
