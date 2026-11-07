@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --dark: #000;
+    --white: #fff;
+    --accent: #F9C06A26;
+    --cream: #FFF8F1;
+
+    --ftext: #603809;
+    --stext: #707070;
+
+    --btn: #F9C06A;
+    --border: #F9C06A94;
+
+    --footer: #442808;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    color: var(--stext);
+    font-size: 20px;
+}
+
+.header {
+    color: var(--white);
+
+    background: var(--dark) url("img/coffee_image.png") center / cover no-repeat;
+
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 14px;
+}
+
+.hero {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;   
+}
+
+.hero h1 {
+    margin: 8px 0 24px;
+    font-family: 'Clicker Script', serif;
+    font-weight: normal;
+    font-size: 220px;
+}
+
+
+.logo {
+    font-size: 35px;
+    font-family: 'Clicker Script', serif;
+    font-weight: normal;
+}
+
+
+.hero__container {
+    max-width: 560px;
+    align-items: center;
+}
+
+.header__container,
+.hero__container,
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+.product__image {
+    position: relative;
+    display: inline-block; 
+}
+
+.product__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative; 
+    z-index: 2; 
+}
+
+.product__image::before {
+    content: "";
+    position: absolute;
+
+    top: 85%;
+    left: 0;
+    width: 100%;
+    height: 120%; 
+    
+    background: var(--accent);
+    z-index: 1; 
+}
+
+
+.promo {
+    background: linear-gradient(rgba(68, 40, 8, 0.85), rgba(68, 40, 8, 0.85)),
+                url("img/Rectangle 14.png") center / cover no-repeat;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+
+
+.subscribe {
+    color: var(--white);
+
+    background: linear-gradient(rgba(68, 40, 8, 0.85), rgba(68, 40, 8, 0.85)),
+                url("img/Rectangle 14.png") center / cover no-repeat;
+    background-image: rgba(0, 0, 0, 0.9);
+
+    text-align: center;
+
+    padding: 80px 0;
+}
+
+.footer {
+    color: var(--white);
+    background: linear-gradient(rgba(68, 40, 8, 0.85), rgba(68, 40, 8, 0.85)),
+                url("img/footer_image.png") center / cover no-repeat;
+    padding: 60px 0;
+
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.footer::before {
+    z-index: 2;
+    background: var(--footer);
+}
+
+
+.special-font {
+    font-size: 54px;
+    color: var(--ftext);
+}
+
+.promo__special-font {
+    font-size: 54px;
+    color: var(--white);
+}
+
+
+.subscribe__special-font {
+    font-size: 54px;
+}
+
+.footer__special-font {
+    font-family: 'Clicker Script', serif;
+}
+
+
+.site-nav, .site-btn {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: var(--btn);
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover { opacity: 0.9; }
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+.product__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 56px;
+}
+
+.feature__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin: 48px 0;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.product, .feature, .feedback { text-align: center; }
+
+.product-card {
+    text-align: center;
+    border: 1px solid var(--border);
+}
+.feature-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 40px 24px;
+}
+
+.footer ul { list-style: none; }
+
+
+.subscribe__input {
+    width: 320px;
+    max-width: 100%;
+    padding: 14px 20px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.subscribe__btn {
+    border-radius: 2px;
+    margin-top: 24px;
+}

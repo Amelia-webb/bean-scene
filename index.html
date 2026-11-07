@@ -3,40 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
         <title>Bean Scene</title>
     </head>
     <body>
-        <header class="site-header">
-            <div class="container">
-                <a href="#" class="logo">Bean Scene</a>
-                <nav class="site-nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Sign In</a></li>
-                        <li><a href="#" class="btn">Sign Up</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <div class="header">
+            <header class="site-header">
+                <div class="header__container">
+                    <a href="#" class="logo">Bean Scene</a>
+                    <nav class="site-nav">
+                        <a href="#">Home</a>
+                        <a href="#">Menu</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                    </nav>
+                    <nav class="site-btn">
+                        <a href="#">Sign In</a>
+                        <a href="#" class="btn">Sign Up</a>
+                    </nav>
+                </div>
+            </header>
 
-        <section class="hero">
-            <div class="container">
-                <p>We've got your morning covered with</p>
-                <h1>Coffee</h1>
-                <p>It is best to start your day with a cup of 
-                    coffee. Discover the best flavours of coffee
-                    you will ever have. We provide the best 
-                    for our customers.</p>
-                <a href="#" class="btn">Order Now</a>
-            </div>
-        </section>
+            <section class="hero">
+                <div class="hero__container">
+                    <p>We've got your morning covered with</p>
+                    <h1 class="hero__special-font">Coffee</h1>
+                    <p>It is best to start your day with a cup of 
+                        coffee. Discover the best flavours of coffee
+                        you will ever have. We provide the best 
+                        for our customers.</p>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+            </section>
+        </div>
 
         <section class="discover">
             <div class="container">
-                <h2>Discover the best coffee</h2>
+                <h2 class="special-font">Discover the best coffee</h2>
                 <p>Bean Scene is a coffee shop that provides you 
                     with quality coffee that helps boost your 
                     productivity and helps build your mood. 
@@ -48,14 +52,17 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="product">
             <div class="container">
-                <h2>Enjoy a new blend of coffee style</h2>
+                <h2 class="special-font">Enjoy a new blend of coffee style</h2>
                 <p>Explore all flavours of coffee with us. 
                     There is always a new cup worth experiencing</p>
 
-                <div class="products__grid">
+                <div class="product__grid">
                     <article class="product-card">
+                        <div class="product__image">
+                            <img src="img/Rectangle 7.png" alt="Cappuccino">
+                        </div>
                         <h3>Cappuccino</h3>
                         <p>Coffee 50% | Milk 50%</p>
                         <p>$8.50</p>
@@ -63,6 +70,9 @@
                     </article>
 
                     <article class="product-card">
+                        <div class="product__image">
+                            <img src="img/Rectangle 9.png" alt="Chai Latte">
+                        </div>
                         <h3>Chai Latte</h3>
                         <p>Coffee 50% | Milk 50%</p>
                         <p>$8.50</p>
@@ -70,6 +80,9 @@
                     </article>
 
                     <article class="product-card">
+                        <div class="product__image">
+                            <img src="img/Rectangle 11.png" alt="Macchiato">
+                        </div>
                         <h3>Macchiato</h3>
                         <p>Coffee 50% | Milk 50%</p>
                         <p>$8.50</p>
@@ -77,6 +90,9 @@
                     </article>
 
                     <article class="product-card">
+                        <div class="product__image">
+                            <img src="img/Rectangle 13.png" alt="Espresso">
+                        </div>
                         <h3>Espresso</h3>
                         <p>Coffee 50% | Milk 50%</p>
                         <p>$8.50</p>
@@ -86,32 +102,44 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="feature">
             <div class="container">
-                <h2>Why are we different?</h2>
+                <h2 class="special-font">Why are we different?</h2>
                 <p>We don't just make your coffee, we 
                     make your day!</p>
                 
-                <div class="features__grid">
+                <div class="feature__grid">
                     <article class="feature-card">
+                        <div class="feature__image">
+                            <img src="img/coffee-beans 1.png" alt="Coffee beans">
+                        </div>
                         <h3>Supreme Beans</h3>
                         <p>Beans that provide great 
                             taste</p>
                     </article>
 
                     <article class="feature-card">
+                        <div class="feature__image">
+                            <img src="img/badge 1.png" alt="Badge">
+                        </div>
                         <h3>High Quality</h3>
                         <p>We provide the highest 
                             quality</p>
                     </article>
 
                     <article class="feature-card">
+                        <div class="feature__image">
+                            <img src="img/coffee-cup 1.png" alt="Coffee cup">
+                        </div>
                         <h3>Extraordinary</h3>
                         <p>Coffee like you have never 
                             tasted</p>
                     </article>
 
                     <article class="feature-card">
+                        <div class="feature__image">
+                            <img src="img/best-price 1.png" alt="Best price">
+                        </div>
                         <h3>Affordable Price</h3>
                         <p>Our Coffee prices are easy 
                             to afford</p>
@@ -127,7 +155,7 @@
 
         <section class="promo">
             <div class="container">
-                <h2>Get a chance to have an 
+                <h2 class="promo__special-font">Get a chance to have an 
                     Amazing morning</h2>
                 <p>We are giving you a one-time 
                     opportunity to experience a better 
@@ -138,7 +166,7 @@
 
         <section class="feedback">
             <div class="container">
-                <h2>Our coffee perfection feedback</h2>
+                <h2 class="special-font">Our coffee perfection feedback</h2>
                 <p>Our customers have amazing things to say 
                     about us</p>
                 <p>Lorem Ipsum is simply dummy text of the printing 
@@ -158,7 +186,7 @@
 
         <section class="subscribe">
             <div class="container">
-                <h2>Subscribe to get the Latest News</h2>
+                <h2 class="subscribe__special-font">Subscribe to get the Latest News</h2>
                 <p>Don't miss out on our latest news, updates, 
                     tips and special offers</p>
                 <input type="email" class="subscribe__input" placeholder="Enter your email">
@@ -170,7 +198,7 @@
             <div class="container">
                 <div class="footer__grid">
                 <div class="footer__col">
-                    <h3>Bean Scene</h3>
+                    <h3 class="footer__special-font">Bean Scene</h3>
                     <p>Lorem Ipsum is simply dummy text 
                         of the printing and typesetting 
                         industry. Lorem Ipsum has been the 
